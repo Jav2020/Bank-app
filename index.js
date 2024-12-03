@@ -1,49 +1,103 @@
-let inputEl= document.getElementById("input-el")
-let ulEl= document.getElementById("ul-el")
-myLead= []
-function input(){
-    console.log("This button is clicked")
+// let myLeads = []
+// const inputEl = document.getElementById("input-el")
+// const inputBtn = document.getElementById("input-btn")
+// const ulEl = document.getElementById("ul-el")
+// const delBtn= document.getElementById("del-btn")
+
+
+// const LeadFromLocalStorage= JSON.parse(localStorage.getItem("myLeads"))
+// console.log(LeadFromLocalStorage)
+// localStorage.setItem("myLeads", JSON.stringify(myLeads))
+// if(LeadFromLocalStorage){
+//        myLeads=LeadFromLocalStorage
+// }
+//   renderLeads()
+
+
+
+
+// inputBtn.addEventListener("click", function() {
+//     myLeads.push(inputEl.value)
+//     inputEl.value = ""
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     renderLeads()
+
+
+//     console.log(localStorage.getItem("myLeads"))
+// })
+
+// function renderLeads() {
+//     let listItems = ""
+//     for (let i = 0; i < myLeads.length; i++) {
+//         listItems += `
+//             <li>
+//                 <a target='_blank' href='${myLeads[i]}'>
+//                     ${myLeads[i]}
+//                 </a>
+//             </li>
+//         `
+//     }
+//     ulEl.innerHTML = listItems  
+// }
+// delBtn.addEventListener("click", function(){
+//     console.log("double clicked")
+//     localStorage.clear()
+//     myLeads=[]
+//     renderLeads()
      
-    myLead.push(inputEl.value)
-    inputEl.value= ""
-   
-    
 
-    renderLead()
-    
-    
+// })
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"
+// import { getDatabase } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"
+
+// const firebaseConfig = {
+//     databaseURL: "https://leadstracker-app-3d123-default-rtdb.firebaseio.com/"
+// }
+// const app = initializeApp(firebaseConfig);
+// const database= getDatabase(app)
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+const delBtn= document.getElementById("del-btn")
+// 1. Store the delete button in a deleteBtn variable
+let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+
+
+// 2. Listen for double clicks on the delete button (google it!)
+// 3. When clicked, clear localStorage, myLeads, and the DOM
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push(inputEl.value)
+    inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    renderLeads()
+})
+
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage
+    renderLeads()
 }
 
 
-
-function renderLead(){
-    // let listItem=""
-    myLead.forEach(function(listItem){
-        console.log(listItem)
-        ulEl.innerHTML+= listItem
-    })
-
-    // for(let i=0; i<myLead.length; i++){
-    //     console.log(myLead[i])
-    //  listItem= "<li> <a href='#'>"+myLead[i]+"</a></li>"
-    // }
-    //if(inputEl.value=""){
-        //listItem="come"
-    //}
-//    console.log(listItem)
-   
-    // ulEl.innerHTML+= listItem
-    
+function renderLeads() {
+    let listItems = ""
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+        `
+    }
+    ulEl.innerHTML = listItems  
 }
-let numbers = [1, 2, 3, 4];
-
-numbers.forEach(function(number, index, array) {
-    array[index] = number * 2;
-});
-console.log(numbers)
-const fruits = ["apple", "banana", "mango", "orange"];
-
-fruits.forEach(function(fruit, index) {
-    console.log(index,fruit);
-});
+delBtn.addEventListener("click", function(){
+    console.log("Hello i am here")
+    localStorage.clear()
+    myLeads=[]
+    renderLeads()
+})
 
