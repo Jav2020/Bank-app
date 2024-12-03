@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Bankapp.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavTech Bank App</title>
+</head>
+<body>
+    <div class="all">
+        <nav>
+            <div class="nav-left">
+                <h1>Jav Tech</h1>
+                <p>Bank App</p>
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About loan</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <h2>LOGIN</h2>
+            </div>
+        </nav>
+        <div class="name">
+            <p>LOGIN/REGISTER</p>
+        </div>
+        <div class="section-2">
+            <div class="section-3" style="width: 30%;">
+                
+                <p class="title">If you have an account</p>
+                <h3>Sign In</h3>
+                
+                <div class="input">
+                    <p class="email">E-mail</p>
+                    <input type="text" id="input-field">
+                    <p class="user">Password</p>
+                    <input type="password" id="loginpassword">
+                </div>
+                <button class="big-btn1">Login</button> <br>
+                <input id="small" type="radio"> <span>Remember me</span>
+                <p id="forgot">Forgot Password</p>
+            </div>
+            <div class="section-3" style="width: 50%;">
+                <p class="title">If you don't have an account</p>
+                <h3>Register Now</h3>
+                <div class="input">
+                    
+                    <p class="user">Full Name</p>
+                    <input type="text" class="input-field1" required placeholder="Aniehe Joshua Chinonso">
+               
+                    
+                    <p class="user">E-mail Adress</p>
+                    <input type="text" class="input-field2" required placeholder="name@gmail.com">
+                    <p class="user">Username</p>
+                    <input type="text" class="input-field3" required >
+                    <p class="user">Password</p>
+                    <input type="password" class="input-field4" required >
+                    <!-- <p class="user">Confirm Password</p>
+                    <input type="text" class="input-field5" required > -->
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                        <input id="small-btn" type="radio" ><p> Click here to Generate account number</p>
+                        <p id="acc"></p>
+                </div>
+                <button class="big-btn2"> Submit</button> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

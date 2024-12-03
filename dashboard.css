@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.all-inc{
+    width: 100%;
+    min-width: 1000px;
+}
+.flex{
+    display: flex;
+}
+.nav-bar{
+    background: rgb(36, 36, 192);
+   
+    width: 15%;
+    padding-left: 0.8rem;
+
+}
+ul {
+    display: flex;
+    flex-direction: column;
+  
+    list-style: none;
+    align-items: self-start;
+    
+    
+}
+ul li{
+    margin: 2rem;
+    
+    width: 70%;
+}
+ul li a{
+    color: rgb(70, 230, 230);
+    font-weight: 500;
+    font-size: 1.1rem;
+    
+    text-decoration: none;
+    
+}
+.name{
+    background-color:rgb(45, 196, 171); 
+    font-size: 3.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1.25rem;
+    color:white;
+    width: 100%;
+    margin: auto;
+    min-width: 1000px;
+}
+#all{
+    margin: auto;
+    width: 70%;
+    margin-top: 5rem;
+    
+}
+#all-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 4rem;
+    
+}
+.btn1{background: rgb(255, 209, 3);
+     width: 30%; 
+     border-radius: 5px;
+    }
+
+    .btn2{background: rgb(255, 209, 3);
+        width: 30%; 
+        border-radius: 5px;
+       }
+
+       .btn3{background: rgb(43, 43, 158);
+        width: 30%; 
+        border-radius: 5px;
+       }
+.inner-btn{
+    margin: 1rem ;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#dep-wit{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    
+}
+.overall{
+    width: 49%;
+    box-shadow:10px 10px 5px #ccc;
+    /* background-color: blue; */
+    border-radius: 8px;
+}
+.deposit{
+    margin: 2rem;
+}
+button{
+    background: green;
+    padding: 0.3rem;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+@media screen and (max-width:1000px){
+    #all-btn{
+        display:flex;
+        
+        align-items: center;
+        
+        width: 100%;
+    }
+    .btn1{
+        background: rgb(255, 209, 3);
+        width: 15%; 
+        border-radius: 70%;
+        text-align: center;
+       }
+   
+       .btn2{background: rgb(255, 209, 3);
+           width: 15%; 
+           border-radius: 70%;
+           text-align: center;
+          }
+   
+          .btn3{background: rgb(43, 43, 158);
+           width: 15%; 
+           border-radius: 70%;
+           text-align: center;
+          }
+    #dep-wit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+        
+    }
+    .overall{
+        nav-down: 50px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="shortcut icon" href="Bankapp.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavTech bank app</title>
+</head>
+<body>
+    <div class="all-inc">
+    <div class="name">
+        <p>DASHBOARD</p>
+    </div>
+    <div class="flex">
+    <div class="nav-bar">
+        <p style="font-size: 1.8rem; font-weight: bold; color: white; padding-top: 1.5rem;"> <i class="fa-solid fa-box" style="color: white; padding-right: 10px;"></i>JavTech</p>
+        <ul class="side-bar">
+            <li> <i class="fa-solid fa-house-chimney" style="color: white"></i><a href="#"> Dashboard</a> </li>
+            <li><i class="fa-solid fa-magnifying-glass" style="color: white; padding-right: 8px;"></i> <a href="#">Search</a> </li>
+            <li> <i class="fa-solid fa-chart-simple" style="color: white; padding-right: 8px"></i><a href="#">Insight</a> </li>
+            <li> <i class="fa-regular fa-file" style="color: white; padding-right: 8px"></i>  <a href="#">Docs</a></li>
+            <li> <i class="fa-solid fa-cart-arrow-down" style="color: white; padding-right: 10px"></i><a href="#"> Products</a> </li>
+            <li> <i class="fa-solid fa-wrench" style="color: white;padding-right: 8px"></i><a href="#">Settings</a> </li>
+            <li><i class="fa-solid fa-comments" style="color: white; padding-right: 8px"></i> <a href="#"> Messages</a> </li>
+            <li> <i class="fa-solid fa-sun" style="color: white; padding-right: 8px"></i><a href="#">Account</a> </li>
+        </ul>
+    </div>
+    <div id="all">
+                
+        <div id="all-btn">
+
+            <div class="btn1">
+                <div class="inner-btn">  
+                    <p style="color: white;">deposit</p>
+                    <p style="color: white;">$100</p>
+                </div>
+            </div>
+            <div class="btn2">
+                <div class="inner-btn">  
+                    <p style="color: white;">Withdraw</p>
+                    <p style="color: white;">$500</p>
+                </div>
+            </div>
+            <div class="btn3" >
+               <div class="inner-btn">     
+                    <p style="color: white;">Balance</p>
+                    <p  id="bal-par" style="color: white;">1000</p>
+                </div>
+            </div>
+        </div>
+        <div id="dep-wit">
+            <div class="overall">
+                <div class="deposit">
+                    <p style="font-weight: bold;">Deposite</p>
+                    <input type="text" id="user2"  placeholder="$amount you want to deposit" style="width: 95%; padding-left: 0.4rem;
+                    border-radius: 5px; margin-bottom: 0.6rem; margin-top: 0.4rem; height: 1.5rem; border: 0.1rem solid rgb(56, 53, 53);"><br>
+                    <input type="text" id="user3" placeholder="From" style="width: 95%; padding-left: 0.4rem;
+                    border-radius: 5px; margin-bottom: 0.6rem; margin-top: 0.4rem; height: 1.5rem; border: 0.1rem solid rgb(56, 53, 53);"><br>
+                    <input type="text" placeholder="To"  id="user1" style="width: 95%; padding-left: 0.4rem;
+                    border-radius: 5px; margin-bottom: 0.6rem; margin-top: 0.4rem; height: 1.5rem; border: 0.1rem solid rgb(56, 53, 53);"><br>
+                    <button id="send">Deposite</button>
+                </div>
+            </div>
+            <div class="overall">
+                <div class="deposit">
+                    <p style="font-weight: bold;">Withdraw</p>
+                    <input type="text"  id="draw" placeholder="$amount you want to withdraw" style="width: 95%; padding-left: 0.4rem;
+                    border-radius: 5px; margin-bottom: 0.6rem; margin-top: 0.4rem; height: 1.5rem; border: 0.1rem solid rgb(61, 58, 58);"><br>
+                    <button id="withdraw">Withdraw</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+</div>
+ <script src="dashboard.js"></script>
+</body>
+</html>
